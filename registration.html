@@ -22,9 +22,9 @@
       }
 
       .left {
-        position: absolute;
+        position: fixed;
         width: 40vw;
-        height: 180%;
+        min-height: 100%;
         background: url("https://github.com/thesourceX/thesourceX.github.io/blob/master/pictures/bgreg.png?raw=true");
         background-position: top top;
         background-repeat:  no-repeat;
@@ -40,10 +40,11 @@
         right: 10vw;
       }
 
-      .logo {``
+      .logo {
         position: absolute;
         height: 10vh;
         width: auto;
+        max-height: 50px;
         top: 2vh;
         left: 1vw;
       }
@@ -151,9 +152,9 @@
       <form action="/redirect.php">
 
         <span class="floating-label"><span class="glyphicon glyphicon-tag"></span>First Name</span>
-        <span class="floating-label" style="padding-left:10.2vw;">Last Name</span><br>
+        <span class="floating-label" style="padding-left:8vw;">Last Name</span><br>
         <input type="text" id="fname" required>
-        <span style="margin-left: 3vw">
+        <span style="margin-left: 1vw">
           <input type="text" id="lname" required>
         </span><br><br>
 
@@ -175,7 +176,7 @@
           <option value="Odd">Odd</option>
         </select><br><br>
 
-        <div class="floating-label"><span class="glyphicon glyphicon-user"></span>Student ID</div><input type="text" id="id" required style="min-width: 20vw;"><br><br>
+        <div class="floating-label"><span class="glyphicon glyphicon-user"></span>Student ID</div><input type="text" id="id" required style="min-width: 24vw;"><br><br>
 
         <div class="floating-label"><span class="glyphicon glyphicon-envelope"></span>Email ID</div><input type="text" id="email" required><br><br>
 
