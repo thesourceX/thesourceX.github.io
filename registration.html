@@ -83,14 +83,14 @@
         box-shadow: 0 0 1px #111;
         opacity: 0.8;
         transition: all 1s ease;
-        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
       }
 
       input:focus { box-shadow: 0 0 7px #9b64c9;  }
 
       .floating-label {
         position: relative;
-        top: -11vh;
 
       }
 
@@ -157,16 +157,18 @@
 
       <form action="/redirect.php">
 
+        <span class="floating-label"><span class="glyphicon glyphicon-tag"></span>First Name</span>
+        <span class="floating-label" style="padding-left:10.2vw;">Last Name</span><br>
         <input type="text" id="fname" required>
         <span style="margin-left: 3vw">
           <input type="text" id="lname" required>
-        </span>
-        <div class="floating-label"><span class="glyphicon glyphicon-tag"></span>First Name</div>
-        <div class="floating-label" style="padding-left:18vw; top: -12.5vh;">Last Name</div>
+        </span><br><br>
 
-        <input type="date" id="dob" required>
-        <div class="floating-label"><span class="glyphicon glyphicon-calendar"></span>Date Of Birth</div><br>
 
+        <div class="floating-label"><span class="glyphicon glyphicon-calendar"></span>Date Of Birth</div>
+        <input type="date" id="dob" required><br><br>
+
+        <div class="floating-label"><span class="glyphicon glyphicon-credit-card"></span>Year and Semester</div>
         <select type="text" id="yr" required>
           <option value="Default">Select</option>
           <option value="I">I</option>
@@ -178,22 +180,23 @@
           <option value="Default">Select</option>
           <option value="Even">Even</option>
           <option value="Odd">Odd</option>
-        </select>
-        <div class="floating-label"><span class="glyphicon glyphicon-credit-card"></span>Year and Semester</div><br>
-
-        <input type="text" id="id" required style="width: 20vw;">
-        <div class="floating-label"><span class="glyphicon glyphicon-user"></span>Student ID</div><br>
-
-        <input type="text" id="id" required>
-        <div class="floating-label"><span class="glyphicon glyphicon-envelope"></span>Email ID</div><br>
-
-        <input type="password" id="id" required>
-        <div class="floating-label"><span class="glyphicon glyphicon-eye-open"></span>Create Password*</div><br>
-        <input type="password" id="id" required>
-        <div class="floating-label"><span class="glyphicon glyphicon-eye-close"></span>Confirm Password*</div><br>
+        </select><br><br>
 
 
-        <input id="radio" type="radio" required>I agree to the <a href="#">Terms of Service and Privacy policy</a> including this browser's cookie usage.<br><br><br>
+
+        <div class="floating-label"><span class="glyphicon glyphicon-user"></span>Student ID</div><input type="text" id="id" required style="width: 20vw;"><br><br>
+
+
+        <div class="floating-label"><span class="glyphicon glyphicon-envelope"></span>Email ID</div><input type="text" id="id" required><br><br>
+
+
+        <div class="floating-label"><span class="glyphicon glyphicon-eye-open"></span>Create Password*</div><input type="password" id="id" required><br><br>
+
+
+        <div class="floating-label"><span class="glyphicon glyphicon-eye-close"></span>Confirm Password*</div><input type="password" id="id" required><br><br>
+
+
+        <input id="radio" style="margin-top: 4px" type="radio" required><span style="padding-left:10px;">I agree to the <a href="#">Terms of Service and Privacy policy</a> including this browser's cookie usage.
         <input style="top: 110vh;" type="submit" id="submit">
       </form>
 
