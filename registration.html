@@ -84,23 +84,16 @@
         transition: all 1s ease;
         margin-top: 5px;
         margin-bottom: 5px;
+        background: white;
       }
 
       input:focus { box-shadow: 0 0 7px #9b64c9;  }
 
-      .floating-label {
-        position: relative;
-
-      }
-
-      #fname {
-        position: relative;
-      }
 
       #submit {
         position: absolute;
         border: none !important;
-        min-width: 100px;
+        min-width: 150px;
         height: 30px;
         color: white;
         font-size: 18px;
@@ -182,27 +175,18 @@
           <option value="Odd">Odd</option>
         </select><br><br>
 
-
-
         <div class="floating-label"><span class="glyphicon glyphicon-user"></span>Student ID</div><input type="text" id="id" required style="min-width: 20vw;"><br><br>
-
 
         <div class="floating-label"><span class="glyphicon glyphicon-envelope"></span>Email ID</div><input type="text" id="email" required><br><br>
 
-
         <div class="floating-label"><span class="glyphicon glyphicon-eye-open"></span>Create Password*</div><input type="password" id="pswd" required><br><br>
 
-
         <div class="floating-label"><span class="glyphicon glyphicon-eye-close"></span>Confirm Password*</div><input type="password" id="pswd1" required><br><br>
-
 
         <input id="radio" style="margin-top: 4px" type="radio" required><span style="padding-left:10px;">I agree to the <a href="#">Terms of Service and Privacy policy</a> including this browser's cookie usage.</span>
 
         <input style="margin-top: 40px;" type="submit" id="submit">
       </form>
-
     </div>
-
   </body>
-
 </html>
