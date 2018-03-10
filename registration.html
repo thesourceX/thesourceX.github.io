@@ -15,7 +15,6 @@
     <style>
 
       body, html {
-        height: auto;
         width: 100vw;
         overflow-x: hidden;
         overflow-y: scroll;
@@ -25,12 +24,12 @@
       .left {
         position: absolute;
         width: 40vw;
-        height: 150%;
+        height: 180%;
         background: url("https://github.com/thesourceX/thesourceX.github.io/blob/master/pictures/bgreg.png?raw=true");
         background-position: top top;
         background-repeat:  no-repeat;
         background-attachment: fixed;
-        background-size: 40% 100%;
+        background-size: 40vw 100%;
       }
 
       .right {
@@ -100,9 +99,8 @@
 
       #submit {
         position: absolute;
-        top: 100vh;;
         border: none !important;
-        width: 30%;
+        min-width: 100px;
         height: 30px;
         color: white;
         font-size: 18px;
@@ -141,6 +139,8 @@
       #radio { box-shadow: none !important; }
 
       .glyphicon { padding-right: 7px; }
+
+      select { background-color: white; }
 
     </style>
 
@@ -184,20 +184,21 @@
 
 
 
-        <div class="floating-label"><span class="glyphicon glyphicon-user"></span>Student ID</div><input type="text" id="id" required style="width: 20vw;"><br><br>
+        <div class="floating-label"><span class="glyphicon glyphicon-user"></span>Student ID</div><input type="text" id="id" required style="min-width: 20vw;"><br><br>
 
 
-        <div class="floating-label"><span class="glyphicon glyphicon-envelope"></span>Email ID</div><input type="text" id="id" required><br><br>
+        <div class="floating-label"><span class="glyphicon glyphicon-envelope"></span>Email ID</div><input type="text" id="email" required><br><br>
 
 
-        <div class="floating-label"><span class="glyphicon glyphicon-eye-open"></span>Create Password*</div><input type="password" id="id" required><br><br>
+        <div class="floating-label"><span class="glyphicon glyphicon-eye-open"></span>Create Password*</div><input type="password" id="pswd" required><br><br>
 
 
-        <div class="floating-label"><span class="glyphicon glyphicon-eye-close"></span>Confirm Password*</div><input type="password" id="id" required><br><br>
+        <div class="floating-label"><span class="glyphicon glyphicon-eye-close"></span>Confirm Password*</div><input type="password" id="pswd1" required><br><br>
 
 
-        <input id="radio" style="margin-top: 4px" type="radio" required><span style="padding-left:10px;">I agree to the <a href="#">Terms of Service and Privacy policy</a> including this browser's cookie usage.
-        <input style="top: 110vh;" type="submit" id="submit">
+        <input id="radio" style="margin-top: 4px" type="radio" required><span style="padding-left:10px;">I agree to the <a href="#">Terms of Service and Privacy policy</a> including this browser's cookie usage.</span>
+
+        <input style="margin-top: 40px;" type="submit" id="submit">
       </form>
 
     </div>
