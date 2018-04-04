@@ -1,0 +1,61 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: white;
+  background: url("resources/Can You Feel The Love Tonight.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.frame{
+  position: fixed;
+  height: 480px;
+  width: 350px;
+  left: 50%;
+  margin-left: -175px;
+  top: 50%;
+  margin-top: -240px;
+  color: white;
+  background: #FAFAFA;
+  font-family: "Lato";
+  box-shadow: 1px 1px 7px black;
+  display: block;
+}
+
+.align {
+  position: absolute;
+  margin-left: -175px;
+  margin-top: -240px;
+  left: 52vw;
+}
+
+.alignr {
+  position: fixed;
+  top: 66vh;
+  color: black;
+  margin-left: 175px;
+  margin-top: -240px;
+  left: 35vw;
+}
+
+.hellotext {
+  color: #310a68;
+  top: 53vh;
+}
+
+.date {
+  color: #9a9a9a;
+  top: 70vh;
+  font-size: 18px;
+}
+
+.mypopup {
+  position: fixed;
+  height: 160px !important;
+  width: 160px !important;
+  left: 50vw;
+  margin-left: -80px;
+  top: 50vh;
+}

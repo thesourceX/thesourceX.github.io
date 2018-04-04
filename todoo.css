@@ -1,0 +1,144 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: white;
+  background: url("resources/Can You Feel The Love Tonight.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.frame{
+  position: absolute;
+  height: 480px;
+  width: 350px;
+  left: 50%;
+  margin-left: -175px;
+  top: 50%;
+  margin-top: -240px;
+  color: white;
+  background: #FAFAFA;
+  font-family: "Lato";
+  box-shadow: 1px 1px 7px black;
+  display: block;
+  background-color: #FAFAFA;
+}
+
+.align {
+  position: absolute;
+  margin-left: 25px;
+}
+
+.alignr {
+  position: absolute;
+  top: 15vh;
+  color: black;
+  margin-left: 270px;
+  margin-top: -20px;
+}
+
+.hellotext {
+  position: absolute;
+  color: #310a68;
+  top: 2vh;
+}
+
+.date {
+  color: #9a9a9a;
+  top: 20vh;
+  font-size: 18px;
+}
+
+.dividermain {
+  margin-top: -70px;
+  position: relative;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px;
+  border-bottom: 1px solid #ccc;
+}
+
+.divider {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  left: 50%;
+  margin-left: -175px;
+  border-bottom: 0.1px solid #ccc;
+
+}
+
+.list {
+  position: relative;
+  overflow-y: scroll;
+  top: 55%;
+  padding-top: 0;
+  height: 60%;
+  width: 100%;
+  color: black;
+  margin-top: -22px;
+  background: white;
+}
+
+.item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.description {
+  font-size: 12px;
+  color: #777;
+}
+
+.item:hover {
+  border-left: 3px solid #00b6ff;
+}
+
+button {
+  position: absolute;
+  background-color: #e50072;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  top: 36vh;
+  left: 60vw;
+  outline: none !important;
+  border: none !important;
+  box-shadow: 2px 2px 2px #aaa;
+}
+
+.hori {
+  height: 15px;
+  margin-top: -7px;
+  color: white;
+  outline: 1px solid white;
+  width: 0;
+  margin-left: 11px;
+}
+
+.vert {
+  width: 15px;
+  color: white;
+  outline: 1px solid white;
+  height: 0;
+  margin-top: -8px;
+  margin-left: 4px;
+}
+
+.frame2 {
+  opacity: 0;
+  display: none;
+}
+
+input {
+  height: 40px;
+  outline: none !important;
+  border-bottom: 4px solid purple;
+}
